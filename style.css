@@ -1,27 +1,37 @@
 body {
-  background-color: rgb(255, 255, 255);
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-/* Estilo para pantallas móviles */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
-        background-color: blue;
-    }
+#tituloNavBar {
+  margin-left: 20px;
 }
 
-.image-container {
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  background-color: #333;
+  paddding: 10px 20px;
+  color: white;
+}
+
+.navbar li {
+  flex: 1; /* que cada <li> ocupe el mismo ancho */
+  text-align: center;
+}
+
+#listNavBar {
+  
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.content {
+  background-color: red;
+  margin: 5px;
 }
