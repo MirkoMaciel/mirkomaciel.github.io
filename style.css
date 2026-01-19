@@ -114,3 +114,36 @@ li{
   line-height: 1.6;
   text-align: justify;
 }
+
+#my-skills-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+
+/*CONFIGURACIÓN CELULARES*/
+
+
+@media (max-width: 768px) {
+    
+    .row {
+        flex-direction: column; /* Cambia de fila a columna */
+        text-align: center;     /* Centra el texto para que se vea mejor en el celu */
+    }
+
+    #image-me {
+        width: 80%;            /* La imagen ocupa casi todo el ancho disponible */
+        max-width: 250px;      /* Pero no deja que se haga gigante */
+        margin-bottom: 20px;   /* Espacio para que no toque el texto */
+    }
+
+    .my-about {
+        width: 95%;            /* Deja un pequeño margen a los lados en el celu */
+        padding: 15px;
+    }
+
+    .my-header {
+        font-size: 1.5rem;     /* Achicamos un poco el título en pantallas chicas */
+    }
+}
