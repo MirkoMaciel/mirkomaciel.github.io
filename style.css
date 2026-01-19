@@ -93,6 +93,7 @@ li{
 }
 
 #image-me {
+  
   width: 300px;
   height: auto;
   border-radius: 15px;
@@ -119,6 +120,16 @@ li{
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Un gris muy clarito */
+}
+
+table td, table th {
+    padding: 12px;
+    border: 1px solid #ddd; /* Un borde suave */
+    text-align: left;
 }
 
 
