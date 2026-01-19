@@ -8,108 +8,129 @@ body {
 /* TITULOS - NAV BAR - ICONS NAV BAR*/
 
 div {
- unicode-bidi: isolate;
+  unicode-bidi: isolate;
 }
 
-.container{
+.container {
   margin-top: 25px;
 }
 
 .my.nav {
-    display: flex;
-    flex-direction: column;  /* Apila los elementos uno debajo de otro */
-    align-items: center;     /* Centra todo horizontalmente */
-    justify-content: center; /* Centra todo verticalmente si el nav tiene altura */
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos uno debajo de otro */
+  align-items: center;
+  /* Centra todo horizontalmente */
+  justify-content: center;
+  /* Centra todo verticalmente si el nav tiene altura */
+  text-align: center;
+  padding: 20px;
 }
 
 #my-title {
   font-size: 3em;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.my-nav-content { 
+.my-nav-content {
 
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden;
   list-style: none;
 }
 
 
 .icon-list {
-    display: flex;
-    flex-direction: row;     /* Asegura que vayan de izquierda a derecha */
-    justify-content: center;
-    align-items: center; 
-    list-style: none;        /* Quita los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    gap: 20px;               /* Espacio entre los iconos */
+  display: flex;
+  flex-direction: row;
+  /* Asegura que vayan de izquierda a derecha */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  /* Espacio entre los iconos */
 }
 
 
 .icon-list i {
-    font-size: 40px;      /* Tamaño fijo para ambos */
-    color: #333;          /* Color gris oscuro/negro */
-    transition: 0.3s;     /* Para que el cambio de color sea suave */
+  font-size: 40px;
+  /* Tamaño fijo para ambos */
+  color: #333;
+  /* Color gris oscuro/negro */
+  transition: 0.3s;
+  /* Para que el cambio de color sea suave */
 }
 
 
 .fa-github:hover {
-    color: #24292e;       /* Color oficial GitHub */
-    transform: scale(1.1);
+  color: #24292e;
+  /* Color oficial GitHub */
+  transform: scale(1.1);
 }
 
 .fa-linkedin:hover {
-    color: #0077b5;       /* Color oficial LinkedIn */
-    transform: scale(1.1);
+  color: #0077b5;
+  /* Color oficial LinkedIn */
+  transform: scale(1.1);
 }
 
-li{ 
+li {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
-  flex:  1;
+  flex: 1;
 }
 
 
 /* ABOUT ME SECTION */
 
-.my-about{
+.my-about {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff; /* Fondo blanco */
-  border-radius: 12px;       /* Bordes redondeados */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+  background-color: #ffffff;
+  /* Fondo blanco */
+  border-radius: 12px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
 }
 
 #image-me {
-  
+
   width: 300px;
   height: auto;
   border-radius: 15px;
 }
 
 .row {
-    display: flex;          /* Alinea los hijos en horizontal */
-    align-items: center;    /* Centra verticalmente la imagen con el texto */
-    justify-content: center;/* Centra el conjunto en el medio de la pantalla */
-    gap: 40px;              /* Espacio de separación entre la foto y el texto */
-    max-width: 1000px;      /* Opcional: para que no se estire demasiado en pantallas grandes */
-    margin: 0 auto;         /* Centra el contenedor row en la página */
-    padding: 20px;
+  display: flex;
+  /* Alinea los hijos en horizontal */
+  align-items: center;
+  /* Centra verticalmente la imagen con el texto */
+  justify-content: center;
+  /* Centra el conjunto en el medio de la pantalla */
+  gap: 40px;
+  /* Espacio de separación entre la foto y el texto */
+  max-width: 1000px;
+  /* Opcional: para que no se estire demasiado en pantallas grandes */
+  margin: 0 auto;
+  /* Centra el contenedor row en la página */
+  padding: 20px;
 }
 
-.my-text , .my-header{ 
+.my-text,
+.my-header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
@@ -123,13 +144,16 @@ li{
 }
 
 table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Un gris muy clarito */
+  background-color: #f2f2f2;
+  /* Un gris muy clarito */
 }
 
-table td, table th {
-    padding: 12px;
-    border: 1px solid #ddd; /* Un borde suave */
-    text-align: left;
+table td,
+table th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  /* Un borde suave */
+  text-align: left;
 }
 
 
@@ -137,24 +161,76 @@ table td, table th {
 
 
 @media (max-width: 768px) {
-    
-    .row {
-        flex-direction: column; /* Cambia de fila a columna */
-        text-align: center;     /* Centra el texto para que se vea mejor en el celu */
-    }
 
-    #image-me {
-        width: 80%;            /* La imagen ocupa casi todo el ancho disponible */
-        max-width: 250px;      /* Pero no deja que se haga gigante */
-        margin-bottom: 20px;   /* Espacio para que no toque el texto */
-    }
 
-    .my-about {
-        width: 95%;            /* Deja un pequeño margen a los lados en el celu */
-        padding: 15px;
-    }
+  .my-nav {
+    flex-direction: column;
+    /* Apila el nombre sobre los iconos */
+    padding: 15px 0;
+  }
 
-    .my-header {
-        font-size: 1.5rem;     /* Achicamos un poco el título en pantallas chicas */
-    }
+  #my-title {
+    font-size: 1.4rem;
+    /* Achica un poco el texto para que no se corte */
+    margin-bottom: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    /* La imagen se pone ARRIBA del texto */
+    align-items: center;
+    /* Centra la imagen y el texto */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  #image-me {
+    width: 80%;
+    /* La imagen ocupa casi todo el ancho disponible */
+    max-width: 250px;
+    /* Pero no deja que se haga gigante */
+    margin-bottom: 20px;
+    /* Espacio para que no toque el texto */
+  }
+
+  .my-about {
+    width: 95%;
+    /* Deja un pequeño margen a los lados en el celu */
+    padding: 15px;
+  }
+
+  .my-header {
+    font-size: 1.5rem;
+    /* Achicamos un poco el título en pantallas chicas */
+  }
+
+  .my-about {
+    width: 95%;
+    /* Casi todo el ancho del celu, pero con margen */
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  /* 3. Ajuste de la imagen */
+  #image-me {
+    width: 70%;
+    /* La imagen no ocupa todo el ancho, queda más prolija */
+    max-width: 200px;
+    /* Límite para que no se vea gigante */
+    height: auto;
+  }
+
+  /* 4. Ajuste del texto y tabla */
+  .my-text {
+    text-align: center;
+    /* Centra el texto del párrafo en el móvil */
+  }
+
+  table {
+    font-size: 14px;
+    /* Achica la letra de la tabla para que no se salga */
+    display: block;
+    /* Permite que la tabla sea scrolleable si es muy ancha */
+    overflow-x: auto;
+  }
 }
