@@ -6,8 +6,16 @@ body {
 }
 
 div {
- display: block;
  unicode-bidi: isolate;
+}
+
+.my.nav {
+    display: flex;
+    flex-direction: column;  /* Apila los elementos uno debajo de otro */
+    align-items: center;     /* Centra todo horizontalmente */
+    justify-content: center; /* Centra todo verticalmente si el nav tiene altura */
+    text-align: center;
+    padding: 20px;
 }
 
 #my-title {
@@ -17,40 +25,63 @@ div {
   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#my-nav-content {
-  margin: 0;
+.my-nav-content { 
+
+  display: flex;
+  justify-content: center;
+  margin: 10px;
   padding: 0;
   overflow: hidden; 
   list-style: none;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 
-li{
+/* 3. La lista de iconos: Alinea los iconos uno al lado del otro */
+.icon-list {
+    display: flex;
+    flex-direction: row;     /* Asegura que vayan de izquierda a derecha */
+    justify-content: center;
+    align-items: center; 
+    list-style: none;        /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    gap: 20px;               /* Espacio entre los iconos */
+}
+
+/* Estilo para los iconos */
+.icon-list i {
+    font-size: 40px;      /* Tamaño fijo para ambos */
+    color: #333;          /* Color gris oscuro/negro */
+    transition: 0.3s;     /* Para que el cambio de color sea suave */
+}
+
+/* Color original de cada marca al pasar el mouse (opcional) */
+.fa-github:hover {
+    color: #24292e;       /* Color oficial GitHub */
+    transform: scale(1.1);
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;       /* Color oficial LinkedIn */
+    transform: scale(1.1);
+}
+
+li{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   flex:  1;
-  text-align: center;
 }
 
-#img {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  display: block;
+/*
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
 }
-
-
-#listNavBar {
-
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.content {
-  background-color: red;
-  margin: 5px;
-}
-
-.contenedor {
-  border: 2px solid black;
-}
+*/
