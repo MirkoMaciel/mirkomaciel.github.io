@@ -94,7 +94,8 @@ li {
 
 /* ABOUT ME SECTION */
 
-.my-about, .my-project{
+.my-about,
+.my-project {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
@@ -158,7 +159,7 @@ table th {
 
 /*projects*/
 
-#project-one{
+#project-one {
   display: flex;
   justify-content: left;
   align-items: left;
@@ -166,7 +167,8 @@ table th {
   width: 100%;
 }
 
-#project-div-one{ /**/
+#project-div-one {
+  /**/
 
 }
 
@@ -178,23 +180,30 @@ table th {
 }
 
 #project-div-two .my-text {
-    width: 100%;            /* Ocupa el 100% del ancho de su padre (#project-div-two) */
-    display: block;         /* Asegura que se comporte como bloque */
-    text-align: left;       /* O 'justify' para que se vea más lleno */
-    margin: 20px;         /* Espacio arriba y abajo */
-    box-sizing: border-box; /* Evita que el padding lo ensanche más del 100% */
+  width: 100%;
+  /* Ocupa el 100% del ancho de su padre (#project-div-two) */
+  display: block;
+  /* Asegura que se comporte como bloque */
+  text-align: left;
+  /* O 'justify' para que se vea más lleno */
+  margin: 20px;
+  /* Espacio arriba y abajo */
+  box-sizing: border-box;
+  /* Evita que el padding lo ensanche más del 100% */
 }
 
 #project-div-two .img {
-    max-width: 100%;        /* Evita que la imagen se salga del contenedor */
-    height: auto;           /* Mantiene la proporción */
+  max-width: 100%;
+  /* Evita que la imagen se salga del contenedor */
+  height: auto;
+  /* Mantiene la proporción */
 }
 
-#project-div-two p{
+#project-div-two p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.img{
+.img {
   width: 300px;
   height: auto;
   border-radius: 15px;
@@ -278,37 +287,52 @@ table th {
     /* Permite que la tabla sea scrolleable si es muy ancha */
     overflow-x: auto;
   }
-/*PROJECTS config*/
 
-    #project-one {
-        display: flex;
-        flex-direction: column; /* Apila el título y el contenido */
-        align-items: center;    /* Centra todo horizontalmente */
-        text-align: center;     /* Centra el texto */
-    }
+  /*PROJECTS config*/
 
-    /* 2. El div que contiene la imagen y el párrafo */
-    #project-div-two {
-        display: flex;
-        flex-direction: column; /* La imagen arriba, el texto abajo */
-        align-items: center;
-        width: 100%;
-    }
+  #project-one {
+    display: -webkit-box;
+    /* Para versiones viejas de navegadores de apps */
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    /* Apila el título y el contenido */
+    align-items: center;
+    /* Centra todo horizontalmente */
+    text-align: center;
+    /* Centra el texto */
+  }
 
-    /* 3. Ajuste de la imagen del proyecto */
-    #project-div-two .img {
-        width: 100%;           /* Ocupa el ancho disponible */
-        max-width: 350px;      /* Evita que se vea gigante en tablets */
-        height: auto;
-        margin-bottom: 15px;   /* Separación con el párrafo */
-        border-radius: 8px;    /* Bordes suaves para que se vea moderno */
-    }
+  /* 2. El div que contiene la imagen y el párrafo */
+  #project-div-two {
+    display: flex;
+    flex-direction: column;
+    /* La imagen arriba, el texto abajo */
+    align-items: center;
+    width: 100%;
+  }
 
-    /* 4. Ajuste del párrafo de descripción */
-    #project-div-two .my-text {
-        width: 100%;
-        padding: 0 10px;       /* Margen interno para que el texto no toque los bordes del celu */
-        font-size: 15px;       /* Un poco más pequeño para legibilidad */
-        line-height: 1.5;      /* Mejorar el espacio entre líneas */
-    }
+  /* 3. Ajuste de la imagen del proyecto */
+  #project-div-two .img {
+    width: 100%;
+    /* Ocupa el ancho disponible */
+    max-width: 350px;
+    /* Evita que se vea gigante en tablets */
+    height: auto;
+    margin-bottom: 15px;
+    /* Separación con el párrafo */
+    border-radius: 8px;
+    /* Bordes suaves para que se vea moderno */
+  }
+
+  /* 4. Ajuste del párrafo de descripción */
+  #project-div-two .my-text {
+    width: 100%;
+    padding: 0 10px;
+    /* Margen interno para que el texto no toque los bordes del celu */
+    font-size: 15px;
+    /* Un poco más pequeño para legibilidad */
+    line-height: 1.5;
+    /* Mejorar el espacio entre líneas */
+  }
 }
