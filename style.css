@@ -15,7 +15,7 @@ div {
   margin-top: 25px;
 }
 
-.my.nav {
+.my-nav {
   display: flex;
   flex-direction: column;
   /* Apila los elementos uno debajo de otro */
@@ -94,7 +94,7 @@ li {
 
 /* ABOUT ME SECTION */
 
-.my-about {
+.my-about, .my-project{
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
@@ -107,7 +107,6 @@ li {
 }
 
 #image-me {
-
   width: 300px;
   height: auto;
   border-radius: 15px;
@@ -155,6 +154,52 @@ table th {
   /* Un borde suave */
   text-align: left;
 }
+
+
+/*projects*/
+
+#project-one{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+}
+
+#project-div-one{ /**/
+
+}
+
+#project-div-two {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+}
+
+#project-div-two .my-text {
+    width: 100%;            /* Ocupa el 100% del ancho de su padre (#project-div-two) */
+    display: block;         /* Asegura que se comporte como bloque */
+    text-align: left;       /* O 'justify' para que se vea más lleno */
+    margin: 20px;         /* Espacio arriba y abajo */
+    box-sizing: border-box; /* Evita que el padding lo ensanche más del 100% */
+}
+
+#project-div-two .img {
+    max-width: 100%;        /* Evita que la imagen se salga del contenedor */
+    height: auto;           /* Mantiene la proporción */
+}
+
+#project-div-two p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
 
 
 /*CONFIGURACIÓN CELULARES*/
