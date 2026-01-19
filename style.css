@@ -278,4 +278,37 @@ table th {
     /* Permite que la tabla sea scrolleable si es muy ancha */
     overflow-x: auto;
   }
+/*PROJECTS config*/
+
+    #project-one {
+        display: flex;
+        flex-direction: column; /* Apila el título y el contenido */
+        align-items: center;    /* Centra todo horizontalmente */
+        text-align: center;     /* Centra el texto */
+    }
+
+    /* 2. El div que contiene la imagen y el párrafo */
+    #project-div-two {
+        display: flex;
+        flex-direction: column; /* La imagen arriba, el texto abajo */
+        align-items: center;
+        width: 100%;
+    }
+
+    /* 3. Ajuste de la imagen del proyecto */
+    #project-div-two .img {
+        width: 100%;           /* Ocupa el ancho disponible */
+        max-width: 350px;      /* Evita que se vea gigante en tablets */
+        height: auto;
+        margin-bottom: 15px;   /* Separación con el párrafo */
+        border-radius: 8px;    /* Bordes suaves para que se vea moderno */
+    }
+
+    /* 4. Ajuste del párrafo de descripción */
+    #project-div-two .my-text {
+        width: 100%;
+        padding: 0 10px;       /* Margen interno para que el texto no toque los bordes del celu */
+        font-size: 15px;       /* Un poco más pequeño para legibilidad */
+        line-height: 1.5;      /* Mejorar el espacio entre líneas */
+    }
 }
